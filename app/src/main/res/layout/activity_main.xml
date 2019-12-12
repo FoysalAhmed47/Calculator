@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.calculatorsadia.MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="number"
+        android:gravity="left"
+        android:background="#DAC6C6"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight=".3"
+            android:weightSum="4"
+            >
+
+
+            <Button
+
+                android:id="@+id/btn_7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:background="#b8a4bc"
+                android:textSize="40dp"
+                android:onClick="method_7"
+                />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#13e7a4"
+                android:text="8"
+                android:textSize="40dp"
+                android:onClick="method_8"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#137de7"
+                android:text="9"
+                android:onClick="method_9"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_div"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#e77913"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:onClick="method_div"
+                android:textSize="40dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight=".3"
+            android:weightSum="4"
+            >
+
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#dfecdd"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:onClick="method_4"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:onClick="method_5"
+                android:background="#66b956"
+                android:textSize="40dp"
+                />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#e7ce13"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:onClick="method_6"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_mul"
+                android:background="#e71384"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="*"
+                android:onClick="method_mul"
+                android:textSize="40dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight=".3"
+            android:weightSum="4"
+
+            >
+
+
+            <Button
+
+                android:id="@+id/btn_1"
+                android:background="#e72c13"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:onClick="method_1"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:onClick="method_2"
+                android:textSize="40dp"
+                android:background="#cde4c8"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:onClick="method_3"
+                android:textSize="40dp"
+                android:background="#1321e7"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_sub"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:onClick="method_sub"
+                android:textSize="40dp"
+                android:background="#b699bf"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight=".3"
+            android:weightSum="4"
+
+            >
+
+
+            <Button
+
+                android:id="@+id/btn_0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:onClick="method_0"
+                android:background="#13e7ce"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_point"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="."
+                android:onClick="method_point"
+                android:background="#e71356"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:onClick="method_add"
+                android:background="#13e772"
+                android:textSize="40dp"
+
+                />
+
+            <Button
+
+                android:id="@+id/btn_equal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="="
+                android:onClick="method_equal"
+                android:background="#CFE4D6"
+                android:textSize="40dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
